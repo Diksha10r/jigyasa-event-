@@ -1,0 +1,8 @@
+http://asianitbd.com/wp/eventtime/#
+
+#1eb089 = rgb(30,176,137) = rgb(11.8%,69%,53.7%)
+#7c49ab = rgb(124,73,171) = rgb(48.6,28.6,67.1) 
+#7db9e8 = rgb(125,185,232) = rgb(49,72.5,91)
+#ff8625 (orange)
+
+background: linear-gradient(to right, #1eb089 0%, #7c49ab 100%, #7db9e8 100%);

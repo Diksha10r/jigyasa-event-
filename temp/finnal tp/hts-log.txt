@@ -1,0 +1,69 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 24 Feb 2018 22:09:17 at http://asianitbd.com/wp/eventtime/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://asianitbd.com/wp/eventtime/ -O1 "C:\Users\Saloni Arya\Desktop\finnal tp" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:14:35	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/wp-content/themes/eventtime/images/favicon.png (from asianitbd.com/wp/eventtime/)
+22:18:56	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/index.html (from asianitbd.com/wp/eventtime/)
+22:18:56	Warning: 	File not parsed, looks like binary: asianitbd.com/wp/eventtime/wp-content/plugins/revslider/public/assets/css/openhand.cur
+22:18:56	Warning: 	File not parsed, looks like binary: asianitbd.com/wp/eventtime/wp-content/plugins/revslider/public/assets/css/closedhand.cur
+22:18:56	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/wp-content/themes/eventtime/css/owl.video.play.png (from asianitbd.com/wp/eventtime/wp-content/themes/eventtime/css/owl.carousel.css?ver=4.4.14)
+22:18:56	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=247
+22:18:56	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=247 to http://asianitbd.com/wp/eventtime/home-v2/
+22:18:56	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/home-v2/index.html (from asianitbd.com/wp/eventtime/home-v2/)
+22:18:56	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=8
+22:18:56	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=8 to http://asianitbd.com/wp/eventtime/about-us/
+22:18:56	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/about-us/index.html (from asianitbd.com/wp/eventtime/about-us/)
+22:18:56	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=6
+22:18:56	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=6 to http://asianitbd.com/wp/eventtime/services-html/
+22:18:56	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/services-html/index.html (from asianitbd.com/wp/eventtime/services-html/)
+22:19:02	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/index.html (from asianitbd.com/wp/eventtime/2016/02/)
+22:19:02	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=186
+22:19:02	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=186 to http://asianitbd.com/wp/eventtime/2016/02/11/blog-heading/
+22:19:02	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/blog-heading/index.html (from asianitbd.com/wp/eventtime/2016/02/11/blog-heading/)
+22:19:07	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/author/eventtime/index.html (from asianitbd.com/wp/eventtime/author/eventtime/)
+22:19:07	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=207
+22:19:07	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=207 to http://asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-7/
+22:19:07	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-7/index.html (from asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-7/)
+22:19:07	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=192
+22:19:07	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=192 to http://asianitbd.com/wp/eventtime/2016/02/11/text-post-only-here/
+22:19:07	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/text-post-only-here/index.html (from asianitbd.com/wp/eventtime/2016/02/11/text-post-only-here/)
+22:19:07	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=190
+22:19:07	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=190 to http://asianitbd.com/wp/eventtime/2016/02/11/post-with-link/
+22:19:07	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/post-with-link/index.html (from asianitbd.com/wp/eventtime/2016/02/11/post-with-link/)
+22:19:07	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=183
+22:19:07	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=183 to http://asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here/
+22:19:07	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here/index.html (from asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here/)
+22:19:07	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=205
+22:19:07	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=205 to http://asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-6/
+22:19:07	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-6/index.html (from asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-6/)
+22:19:07	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=202
+22:19:07	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=202 to http://asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-5/
+22:19:07	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-5/index.html (from asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-5/)
+22:19:07	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=199
+22:19:07	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=199 to http://asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-4/
+22:19:07	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-4/index.html (from asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-4/)
+22:19:07	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=197
+22:19:07	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=197 to http://asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-3/
+22:19:07	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-3/index.html (from asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-3/)
+22:19:08	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/?p=194
+22:19:08	Warning: 	File has moved from asianitbd.com/wp/eventtime/?p=194 to http://asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-2/
+22:19:08	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-2/index.html (from asianitbd.com/wp/eventtime/2016/02/11/post-with-image-here-2/)
+22:19:08	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/2016/02/page/1/
+22:19:08	Warning: 	File has moved from asianitbd.com/wp/eventtime/2016/02/page/1/ to http://asianitbd.com/wp/eventtime/2016/02/
+22:19:09	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/page/2/index.html (from asianitbd.com/wp/eventtime/2016/02/page/2/)
+22:19:09	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/page/3/index.html (from asianitbd.com/wp/eventtime/2016/02/page/3/)
+22:19:09	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/page/5/index.html (from asianitbd.com/wp/eventtime/2016/02/page/5/)
+22:19:09	Warning: 	Moved Permanently for asianitbd.com/wp/eventtime/author/eventtime/page/1/
+22:19:09	Warning: 	File has moved from asianitbd.com/wp/eventtime/author/eventtime/page/1/ to http://asianitbd.com/wp/eventtime/author/eventtime/
+22:19:10	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/author/eventtime/page/2/index.html (from asianitbd.com/wp/eventtime/author/eventtime/page/2/)
+22:19:10	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/author/eventtime/page/3/index.html (from asianitbd.com/wp/eventtime/author/eventtime/page/3/)
+22:19:10	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/author/eventtime/page/5/index.html (from asianitbd.com/wp/eventtime/author/eventtime/page/5/)
+22:19:10	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/2016/02/page/4/index.html (from asianitbd.com/wp/eventtime/2016/02/page/4/)
+22:19:10	Error: 	"Not Found" (404) at link asianitbd.com/wp/eventtime/author/eventtime/page/4/index.html (from asianitbd.com/wp/eventtime/author/eventtime/page/4/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 9 minutes 53 seconds : 367 links scanned, 325 files written (14036830 bytes overall) [11597121 bytes received at 19556 bytes/sec], 4303309 bytes transferred using HTTP compression in 160 files, ratio 24%, 9.6 requests per connection
+(26 errors, 32 warnings, 0 messages)

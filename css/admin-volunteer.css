@@ -1,0 +1,58 @@
+#admin-vol-delete{}
+#admin-vol-deletetd:hover #admin-vol-deletebtn{color:red;}
+#admin-vol-deletetd:hover #admin-vol-delete{color:red;}
+#admin-vol-deletebtn{
+	border:0px;
+	outline:0;
+	cursor: pointer;
+	background: none;
+	font-size: 15px;
+	font-weight:bold;
+	color:#4C5357;
+}
+.admin-volunteer-dropbtn{
+	background: #fff;
+	color: #ff8625;
+	position: absolute;
+	margin-top: -30px;
+	margin-left: -65px;
+	font-weight: bold;
+	font-size: 25px;
+	padding: 10px;
+	border: 2px solid #ff8625;
+	border-radius:5px;
+	box-shadow: 2px 2px 10px gray;
+}
+.admin-volunteer-dropbtn:hover{
+	box-shadow: 2px 2px 10px white;
+}
+.admin-volunteer-dropdown-content {
+	z-index: 1;
+    display: none;
+	min-width: 120px;
+    position: absolute;
+	padding: 0px;
+	margin-left: 620px;
+	margin-top: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 19px gray;
+	border-bottom: 4px solid #ff8625;
+}
+.admin-volunteer-dropdown-content a{
+	color: black;
+	display: block;
+	font-size: 17px;
+	text-align: left;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+.admin-volunteer-dropdown-content a:hover {
+	color: #ff8625;
+	cursor: pointer;
+	background-color: #ddd;
+}
+
+.admin-volunteer-dropdown:hover .admin-volunteer-dropdown-content {
+    display: block;
+}

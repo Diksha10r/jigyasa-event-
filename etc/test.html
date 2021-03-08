@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<style>
+			.dark{
+				color: rgba(0, 0, 0, 0.25);
+				border: 1px solid rgba(0, 0, 0, 0.8);
+				border-radius: 100%;
+			}
+			.dark:hover{
+				border: 1px solid rgba(0, 0, 0, 0.25);
+				color: rgba(0, 0, 0, 0.8);
+			}
+			.light{
+				color: blue;
+			}
+		</style>
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	
+		<div id="above-header">
+		
+		</div>
+		<div id="page-header">
+			Jigyasa
+		</div>
+		<center>
+		<img class="mySlides" src="image/slide1.jpg">
+		<img class="mySlides" src="image/slide2.jpg">
+		<img class="mySlides" src="image/slide4.jpg">
+		
+		
+	<span class="fa fa-circle dark" onclick="currentDiv(1)"></span>
+    <span class="fa fa-circle dark" onclick="currentDiv(2)"></span>
+    <span class="fa fa-circle dark" onclick="currentDiv(3)"></span></center>
+    <!--<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>-->
+	
+	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+     dots[i].className = dots[i].className.replace(" light", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+  dots[slideIndex-1].className += " light";
+}
+</script>
+
+	</body>
+</html>

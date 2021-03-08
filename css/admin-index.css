@@ -1,0 +1,228 @@
+/*--------------------------------admin heading of every page------------------------*/
+#admin-heading-block-img{
+	background-image: url('../image/slider1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	height: 250px;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: -10;	
+}
+#admin-heading-block-color{
+	height: 146px;/*-104*/
+	position: absolute;
+	background: #1eb089;
+	bottom: 0;
+	width: 100%;
+	z-index: -5;
+	background: linear-gradient(to right, rgba(30,176,137,.85) 0%, rgba(124,73,171,.85) 100%, rgba(125,185,232,.85) 100%);
+}
+#admin-heading{
+	margin-top: 30px;
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 1px 1px 4px #ff8625;
+}
+.admin-heading-hr{
+	display: inline-block;
+	width: 90px;
+	color: #fff;
+	box-shadow: 1px 1px 4px #ff8625;
+}
+.admin-heading-hr1{}
+.admin-heading-hr2{}
+.admin-heading-faa{
+	color: #fff;	
+	font-size: 5em;
+	text-shadow: 1.5px 1.5px 4px #ff8625;
+}
+
+
+/*-------------------------------admin index------------------------------------------*/
+.db-outer{
+	width: 200px;
+    height: 100px;
+	display: inline-block;
+    padding: 25px 0 30px;
+	margin-right: 20px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+.db-circle{
+	width: 80px;
+    height: 30px;
+    padding: 25px 0 30px;
+	border-top: 3px solid #fff;
+	border-radius: 50%;
+	margin-top: -60px;
+}
+.db-no{
+	color: #fff;
+	font-size: 40px;
+}
+.db-text{
+	color: #fff;
+	font-size: 20px;
+}
+.db-hr1{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 110px;
+	top: 200px;
+}
+.db-hr2{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 250px;
+	top: 200px;
+}
+.db1-hr1{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 337px;
+	top: 200px;
+}
+.db1-hr2{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 477px;
+	top: 200px;
+}
+.db2-hr1{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 562px;/*+85*/
+	top: 200px;
+}
+.db2-hr2{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 700px;
+	top: 200px;
+}
+.db3-hr1{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 789px;
+	top: 200px;
+}
+.db3-hr2{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 930px;
+	top: 200px;
+}
+.db4-hr1{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 1015px;
+	top: 200px;
+}
+.db4-hr2{
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	border: 0.5px solid white;
+	left: 1155px;
+	top: 200px;
+}
+.dashboard{
+	width: 85%;
+	margin-left: 110px;
+	margin-top: 40px;
+	border: 0px solid red;
+}
+.dashboard-box{
+	border: 3px solid #1eb089;
+	width: 250px;
+	height: 180px;
+	display: inline-block;
+	box-shadow: 2px 2px 10px white;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.dashboard-content{
+	border-bottom: 0px solid #1eb089;
+	width: 100%;
+	height: 110px;
+	background-color: #eee;
+}
+.dashboard-name{
+	width: 100%;
+	height: 70px;
+	background-color: #1eb089;
+}
+.dashboard-title1{
+	color: #fff;
+	font-size: 40px;
+	margin-top: 60px;
+	margin-bottom: 7px;
+}
+.dashboard-title2{
+	color: #fff;
+	font-size: 35px;
+	margin-left: 25px;
+}
+.dashboard-no{
+	color: #1eb089;
+	font-size: 55px;
+	margin-left: 70px;
+}
+.faa1{
+	color: #1eb089;
+	margin-left: 25px;
+	margin-top: 35px;
+	
+}
+.dashboard-hr{
+	display: inline-block;
+	width: 90px;
+}
+.dashboard-hr1{ 
+	margin-left: 150px;
+}
+.dashboard-hr2{}
+.dashboard-faa{
+	color: #fff;	
+	font-size: 5em;
+}
+#dashboard-bgimg{
+	background-image: url('../image/slider1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	height: 600px;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: -10;	
+	
+}
+.dashboard-bgover{
+	height: 496px;/*-104*/
+	position: absolute;
+	background: #1eb089;
+	bottom: 0;
+	width: 100%;
+	z-index: -5;
+	background: linear-gradient(to right, rgba(30,176,137,.85) 0%, rgba(124,73,171,.85) 100%, rgba(125,185,232,.85) 100%);
+}

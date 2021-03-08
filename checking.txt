@@ -1,0 +1,261 @@
+<?php
+
+if(isset($_POST['sub1']))
+{
+	$b=$_POST["b"];
+	$r1=mysqli_query($db,"select * from faculty where email='$b'");
+	$c1=mysqli_num_rows($r1);
+	if($c1==0)
+	{
+		
+		$a=$_POST['a'];
+		$r2=mysqli_query($db,"select * from faculty where e_id=$a and head=1");
+		echo "select * from faculty where e_id=$a and head=1";
+		$c2=mysqli_num_rows($r2);
+		if($c2==0)
+		{
+			$d=$_POST["d"];
+			$dd=$_POST["dd"];
+			if($d==$dd)
+			{
+				$a=$_POST["a"];
+				$b=$_POST["b"];
+				$c=$_POST["c"];
+				$d=$_POST["d"];
+				$e=$_POST["e"];
+				$g=$_POST["g"];
+				$file=$_FILES["f"];				
+				if($file['type']=="image/jpg" || $file['type']=="image/jpeg" || $file['type']=="image/png")
+				{
+					$h=$_FILES["f"]["name"];
+					$newname=time().rand().$h;
+					$result=mysqli_query($db,"insert into faculty(e_id,email,name,password,phone,img,head) values('$a','$b','$c','$d',$e,'$newname',$g)") or die("insert Invalid:");
+					move_uploaded_file($_FILES["f"]["tmp_name"],"image/faculty-img/".$newname);
+				}
+				else
+				{
+					?>
+					<div id="error-block1">
+						<span class="fa fa-image fa-2x error-fa"></span>
+						<span class="error-heading">Uploaded file must be of either ".jpg" ".jpeg" ".png"</span>
+						<span class="fa fa-close fa-2x error-close" onclick="closeERROR1()"></span>
+					</div>
+					<script>
+						function closeERROR1()
+						{
+							document.getElementById('error-block1').style.display="none";
+						}
+					</script>
+					<?php				
+								
+				}
+			}
+			else
+			{
+				?>
+				<div id="error-block2">
+					<span class="fa fa-key fa-2x error-fa"></span>
+					<span class="error-heading">Password and Confirm Password not matched</span>
+					<span class="fa fa-close fa-2x error-close" onclick="closeERROR2()"></span>
+				</div>
+				<script>
+					function closeERROR2()
+					{
+						document.getElementById('error-block2').style.display="none";
+					}
+				</script>
+				<?php
+			}
+		}
+		else
+		{
+			?>
+			<div id="error-block3">
+				<span class="fa fa-exclamation-triangle fa-2x error-fa"></span>
+				<span class="error-heading">Event head for this event already exist</span>
+				<span class="fa fa-close fa-2x error-close" onclick="closeERROR3()"></span>
+			</div>
+			<script>
+				function closeERROR3()
+				{
+					document.getElementById('error-block3').style.display="none";
+				}
+			</script>
+			<?php
+		}
+	}
+	else
+	{
+		?>
+		<div id="error-block4">
+			<span class="fa fa-exclamation-triangle fa-2x error-fa"></span>
+			<span class="error-heading">Already registered</span>
+			<span class="fa fa-close fa-2x error-close" onclick="closeERROR4()"></span>
+		</div>
+		<script>
+			function closeERROR4()
+			{
+				document.getElementById('error-block4').style.display="none";
+			}
+		</script>
+		<?php				
+	}
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+if(isset($_POST['sub1']))/*-------------------if:1 clicked on submit -----------------------------------------*/
+{
+	$b=$_POST["b"];
+	$name=mysqli_query($db,"select * from faculty where email='$b'");
+	$count=mysqli_num_rows($name);
+	if($count==0)/*-------------------if:2 new faculty (email)-----------------------------------------*/
+	{
+		$a=$_POST["a"];
+		$b=$_POST["b"];
+		$c=$_POST["c"];
+		$d=$_POST["d"];
+		$dd=$_POST["dd"];
+		$e=$_POST["e"];
+		$g=$_POST["g"];
+		$file=$_FILES["f"];
+		if($d==$dd)/*-------------------if:3 pass n cpass same-----------------------------------------*/
+		{
+			$sql="select * from faculty where e_id=$a and head=1";
+			$res=mysqli_query($db,$sql);
+			$count1=mysqli_num_rows($res);
+			if($count1==0)/*-------------------if:4 no faculty head-----------------------------------------*/
+			{			
+				if(isset($_FILES['f'])/*-------------------if:5 if img is given-----------------------------------------*/
+				{
+					if($file['type']=="image/jpg" || $file['type']=="image/jpeg" || $file['type']=="image/png")/*-------------------if:6 img type-----------------------------------------*/
+					{
+						$h=$_FILES["f"]["name"];
+						$newname=time().rand().$h;
+						$result=mysqli_query($db,"insert into faculty(e_id,email,name,password,phone,img,head) values('$a','$b','$c','$d',$e,'$newname','$g')") or die("insert Invalid: ");
+						move_uploaded_file($_FILES["f"]["tmp_name"],"image/faculty-img/".$newname);
+					}
+					else/*-------------------if: uploaded file not an IMAGE-----------------------------------------*/
+					{
+						?>
+						<div id="error-block2">
+							<span class="fa fa-image fa-2x error-fa"></span>
+							<span class="error-heading">Uploaded file must be of either ".jpg" ".jpeg" ".png"</span>
+							<span class="fa fa-close fa-2x error-close" onclick="closeERROR2()"></span>
+						</div>
+						<script>
+							function closeERROR2()
+							{
+								document.getElementById('error-block2').style.display="none";
+							}
+						</script>
+						<?php				
+									
+					}
+				}
+				else /*-------------------if:5 no img given-----------------------------------------*/
+				{
+					mysqli_query($db,"insert into faculty(e_id,email,name,password,phone,head) values('$a','$b','$c','$d',$e,'$g')") or die("insert Invalid: ");
+				}
+			}
+			else /*-------------------if:4 Event already has head-----------------------------------------*/
+			{
+				?>
+				<div id="error-block4">
+					<span class="fa fa-exclamation-triangle fa-2x error-fa"></span>
+					<span class="error-heading">Event already has head</span>
+					<span class="fa fa-close fa-2x error-close" onclick="closeERROR4()"></span>
+				</div>
+				<script>
+					function closeERROR4()
+					{
+						document.getElementById('error-block4').style.display="none";
+					}
+				</script>
+				<?php
+			}
+		}
+		else /*-------------------if:3 pass cpass do not match-----------------------------------------*/
+		{ 
+			?>
+				<div id="error-block3">
+					<span class="fa fa-exclamation-triangle fa-2x error-fa"></span>
+					<span class="error-heading">Password do not match confirm password</span>
+					<span class="fa fa-close fa-2x error-close" onclick="closeERROR3()"></span>
+				</div>
+				<script>
+					function closeERROR3()
+					{
+						document.getElementById('error-block3').style.display="none";
+					}
+				</script>
+			<?php	
+		}
+		
+	}
+	else   /*-------------------if:2 Faculty already exist-----------------------------------------*/
+	{
+		?>
+			<div id="error-block1">
+				<span class="fa fa-exclamation-triangle fa-2x error-fa"></span>
+				<span class="error-heading">Faculty already Registered</span>
+				<span class="fa fa-close fa-2x error-close" onclick="closeERROR1()"></span>
+			</div>
+			<script>
+				function closeERROR1()
+				{
+					document.getElementById('error-block1').style.display="none";
+				}
+			</script>
+		<?php
+	}
+}
+?>
